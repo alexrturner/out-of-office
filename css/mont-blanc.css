@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.section {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}

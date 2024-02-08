@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* prevent scrolling outside */
+        cursor: move;
+      }
+      #box {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto; /* enable scrolling within */
+        display: flex;
+      }
+      #enter {
+        min-width: 200vw;
+        min-height: 600vh;
+      }
+      a {
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        font-size: 2vw;
+      }
+    </style>
+  </head>
+  <a href="portal.html">portal</a>
+  <div id="box">
+    <img id="enter" src="enter.jpg" alt="" />
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const image = document.getElementById("enter");
+      const box = document.getElementById("box");
+
+      function centerImage() {
+        const imageWidth = image.naturalWidth;
+        const imageHeight = image.naturalHeight;
+
+        const scrollX = (imageWidth - box.offsetWidth) / 2;
+        const scrollY = (imageHeight - box.offsetHeight) / 2;
+
+        box.scrollLeft = scrollX;
+        box.scrollTop = scrollY;
+      }
+
+      // check load for dimensions, then center
+      if (image.complete) {
+        centerImage();
+      } else {
+        image.onload = centerImage;
+      }
+    });
+  </script>
+</html>

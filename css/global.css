@@ -1,0 +1,40 @@
+h1 {
+  font-size: 200px;
+}
+p {
+  font-size: 22px;
+  width: 120px;
+  background-color: hotpink;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  left: 50%;
+  top: 110vh;
+
+  padding: 30px;
+  border: 12px dotted orangered;
+  transform: rotate(20deg);
+  font-family: monospace;
+}
+
+.blue {
+  color: blue;
+}
+.the-text {
+  background-color: tan;
+}
+span {
+  font-family: "Courier New", Courier, monospace;
+}
+.salmon {
+  color: salmon;
+}
+.firebrick {
+  color: firebrick;
+}
+.coral {
+  color: coral;
+}
+.gold {
+  color: gold;
+}
