@@ -1,0 +1,44 @@
+.flex-container {
+  display: grid;
+
+  /* flex-direction: column; */
+  /* align-items: center; */
+  grid-template-areas:
+    "header header"
+    "nav article"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+}
+
+.section {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.section {
+  border: 20px solid #ccc;
+}
+#section1 {
+  grid-area: header;
+}
+
+#section3 {
+  grid-area: nav;
+
+  display: flex;
+  gap: 10px;
+}
+
+#section2 {
+  grid-area: article;
+}
+#section4 {
+  grid-area: footer;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
