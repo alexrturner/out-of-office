@@ -3,6 +3,48 @@ a {
   text-decoration: none;
 }
 
-nav {
-  border: 1px solid blue;
+section {
+  display: flex;
+}
+
+div.thanks {
+  border: 2px solid #efefef;
+  padding: 20px;
+  width: 50px;
+  resize: both;
+  overflow: auto;
+}
+.shh {
+  position: absolute;
+  font-style: italic;
+  text-align: center;
+}
+.shh.mont {
+  top: 50%;
+  left: 70%;
+  animation: hiding 10s infinite;
+}
+.shh.flower {
+  top: 20%;
+  left: 34%;
+  animation: hiding 7s infinite 5s;
+}
+.shh.nested {
+  top: 70%;
+  left: 20%;
+  animation: hiding 5s infinite 10s;
+}
+.shh:hover {
+  animation-play-state: paused;
+}
+@keyframes hiding {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

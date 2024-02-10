@@ -17,24 +17,10 @@ p {
   font-family: monospace;
 }
 
-.blue {
-  color: blue;
-}
-.the-text {
-  background-color: tan;
-}
 span {
   font-family: "Courier New", Courier, monospace;
 }
-.salmon {
-  color: salmon;
-}
-.firebrick {
-  color: firebrick;
-}
-.coral {
-  color: coral;
-}
-.gold {
-  color: gold;
+button {
+  width: 100%;
+  text-align: center;
 }

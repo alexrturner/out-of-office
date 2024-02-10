@@ -4,27 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mont Blanc</title>
-    <link rel="stylesheet" href="css/mont-blanc-flex.css" />
+    <link rel="stylesheet" href="css/mont-blanc.css" />
 
     <style>
       .pinned {
         position: fixed;
         top: 20px;
         right: 20px;
-        border: 1px solid blue;
+
         border-radius: 2em;
         padding: 1em;
-        width: 2.5em;
+
         text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="pinned"><a href="mont-blanc-flex.html">++</a></div>
-    <h1>Mont Blanc: <span>Lines Written in the Vale of Chamouni</span></h1>
+    <div class="pinned">
+      <button id="regress">remove styles</button>
+      <button id="progress-flex">flex layout</button>
+      <button id="progress-grid">grid layout</button>
+    </div>
+    <header>
+      <h1>Mont Blanc: <span>Lines Written in the Vale of Chamouni</span></h1>
+      <span>
+        <a
+          href="https://en.wikipedia.org/wiki/Mont_Blanc_(poem)"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Percy Bysshe Shelley</a
+        >, 1816
+      </span>
+    </header>
 
-    <div class="flex-container">
-      <div class="section" id="section1">
+    <div id="container">
+      <div class="section" id="stanza1">
         <h2>I</h2>
         <p>
           The everlasting universe of things<br />
@@ -40,7 +55,7 @@
           Over its rocks ceaselessly bursts and raves.
         </p>
       </div>
-      <div class="section" id="section2">
+      <div class="section" id="stanza2">
         <h2>II</h2>
         <p>
           Thus thou, Ravine of Arve—dark, deep Ravine—<br />
@@ -82,7 +97,7 @@
           From which they fled recalls them, thou art there!<br />
         </p>
       </div>
-      <div class="section" id="section3">
+      <div class="section" id="stanza3">
         <h2>III</h2>
         <p>Some say that gleams of a remoter world</p>
         <p>Visit the soul in sleep, that death is slumber,</p>
@@ -120,11 +135,140 @@
         <p>By all, but which the wise, and great, and good</p>
         <p>Interpret, or make felt, or deeply feel.</p>
       </div>
-      <div class="section" id="section4">
+      <div class="section" id="stanza4">
         <h2>IV</h2>
-        <p>The fields, the lakes, the forests, and the streams...</p>
+
+        <div style="text-indent: -1em; padding-left: 1em">
+          The fields, the lakes, the forests, and the streams, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Ocean, and all the living things that dwell <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Within the daedal earth; lightning, and rain, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Earthquake, and fiery flood, and hurricane, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          The torpor of the year when feeble dreams <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Visit the hidden buds, or dreamless sleep <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Holds every future leaf and flower; the bound <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          With which from that detested trance they leap; <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          The works and ways of man, their death and birth, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          And that of him and all that his may be; <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          All things that move and breathe with toil and sound <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Are born and die; revolve, subside, and swell. <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Power dwells apart in its tranquillity, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Remote, serene, and inaccessible: <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          And <em>this</em>, the naked countenance of earth, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          On which I gaze, even these primeval mountains <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Teach the adverting mind. The glaciers creep <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Like snakes that watch their prey, from their far fountains, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Slow rolling on; there, many a precipice <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Frost and the Sun in scorn of mortal power <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Have pil'd: dome, pyramid, and pinnacle, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          A city of death, distinct with many a tower <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          And wall impregnable of beaming ice. <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Yet not a city, but a flood of ruin <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Is there, that from the boundaries of the sky <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Rolls its perpetual stream; vast pines are strewing <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Its destin'd path, or in the mangled soil <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Branchless and shatter'd stand; the rocks, drawn down <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          From yon remotest waste, have overthrown <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          The limits of the dead and living world, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Never to be reclaim'd. The dwelling-place <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Of insects, beasts, and birds, becomes its spoil; <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Their food and their retreat for ever gone, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          So much of life and joy is lost. The race <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Of man flies far in dread; his work and dwelling <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Vanish, like smoke before the tempest's stream, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          And their place is not known. Below, vast caves <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Shine in the rushing torrents' restless gleam, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Which from those secret chasms in tumult welling <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Meet in the vale, and one majestic River, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          The breath and blood of distant lands, for ever <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Rolls its loud waters to the ocean-waves, <br />
+        </div>
+        <div style="text-indent: -1em; padding-left: 1em">
+          Breathes its swift vapours to the circling air. <br />
+        </div>
       </div>
-      <div class="section" id="section5">
+      <div class="section" id="stanza5">
         <h2>V</h2>
         <p>
           Mont Blanc yet gleams on high:—the power is there,<br />
@@ -149,17 +293,6 @@
       </div>
     </div>
 
-    <details>
-      <summary>
-        <a
-          href="https://en.wikipedia.org/wiki/Mont_Blanc_(poem)"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Percy Shelley</a
-        >
-      </summary>
-      <p>all about percy</p>
-    </details>
+    <script src="js/change-display.js"></script>
   </body>
 </html>
